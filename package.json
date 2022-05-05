@@ -1,0 +1,24 @@
+{
+  "name": "jspro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinrivera20/JS_profesional.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinrivera20/JS_profesional/issues"
+  },
+  "homepage": "https://github.com/kevinrivera20/JS_profesional#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
