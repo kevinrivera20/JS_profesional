@@ -1,0 +1,81 @@
+PROTOTYPE.
+- Los prototipos son un mecanismo mediante el cual los objetos en JavaScript heredan características entre sí.
+
+HERENCÍA PROTOTIPAL.
+- JavaScript no tiene clases cómo otros idiomas. Uyiliza el concepto de prototipos y el encadenamiento de prototipos para la herencía
+
+CÓMO FUNCIONA JAVASCRIPT, PARSERS Y EL ABSTRACT SYNTAX TREE.
+- JavaScript es interpretado, es decir es convertido a lenguaje máquina a medida que es ejecutado.
+
+¿QUÉ HACE UN JS ENGINE?
+- Recibe código fuente
+- Parsea el código y produce un Abstract Syntax Tree (AST)
+- Se compila a bytecode y se ejecuta.
+- Se optimiza a machine code y se reemplaza el código base
+
+
+¿QUÉ HACE UN PARSER?
+- Código fuente ---> Tokens ---> Abstract Syntax Tree.
+   - Un parser va a coger tu código fuente y lo va a leer, en lenguaje máquina.
+
+UN SYNTAXERROR.
+- Un SyntaxError es lanzado cuando el motor de JavaScript se encuentra con partes de código que no forman parte de la sintaxis del lenguaje al momento de analizar el código.
+
+GOOGLE DICE.
+- Parsing es 15-20% del proceso de ejecución.
+- La mayoría del JavaScript en una página nunca se ejecuta.
+- Esto hace que bundling y code splitting sea muy importante.
+
+PARSER DE V8.
+EAGER PARSING:
+-Encuentra errores de sintaxis.
+-Crea el AST.
+-Construye Scopes.
+
+LAZY PARSING:
+-Doble ded rápido que el eager parser.
+-No crea el AST.
+-Construye los scope parcialmente. 
+
+
+EL ABSTRACT SYNTAX TREE (AST).
+- Es un grafo(estructura de datos) que representa un programa.
+
+Se usa en: 
+ - JavaScript.
+ - Bundleres: Webpack, Rollup, Parcel
+ - Transpilers: Babel
+ - Linters: ESLint, Prettify
+ - Type Checkers: TypeScript, Flow
+ - Syntax Highlighters.
+
+BYTECODE.
+ -Código parecido a assembly.
+ -Portatil.
+ -Ejecutado por una virtual machine.
+
+MACHINE CODE.
+ -Binario.
+ -Instrucciones específicas a una arquitectura o procesador.
+
+EVENT LOOP.
+ -Es lo que hace que JavaScript parezca ser multihilo.
+
+STACK.
+ - El stack es una estructura de datos que lleva rastro de donde está el programa y los programas comienzan con la función main y main la vez llama a renderList y renderList llama a getMovies, en el stack es donde están nuestras funciones, ahí está el registro de cómo está operando nuestro registro.
+
+MEMORY HEAP.
+ - Es una estructura desorganizada, se guarda información cómo las variables, el scope, etc.
+
+SET TIME OUT.
+ -Es una función que va a ejecutar otra función en untiempo determinado, ejemplo 1000ms.
+
+QUEUE.
+ -Es una estructura de datos, dónde lo primero que entra es lo primero que sale
+
+PROMISE.
+ -Es la promesa de que algo eventualmente va a pasar, o sea es asincrono.
+
+Getters y setters.
+ -Son funciones que podemos utilizar dentro de objetos, que nos permiten tener propiedades virtuales, no es una propiedad que existe directamente en el objeto. 
+

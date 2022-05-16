@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Herencía prototipal</title>
+    </head>
+    <body>
+        <a href="/ejercicios/">Go back</a>
+        <p><em>Abre la consola</em></p>
+
+        <script>
+            function Hero(name) {
+                this.name = name;
+            };
+
+            const zelda = new Hero('Zelda');
+
+            //Propiedades de la instancia
+            console.log("Name:", zelda.name); 
+            //Propiedades de la "clase"
+            console.log("Saludar:", zelda.saludar); 
+            //Propiedades heredadas ej: toString
+            console.log("toString:", zelda.toString); 
+            //hasOwnProperty (de dónde sale toString o esto?)
+            console.log('zelda.hasOwnProperty("name"):',
+                zelda.hasOwnProperty ("saludar")); 
+            //Inspecciones en el prototipo del Zelda
+            //Inspecciones en el prototipo del Zelda
+            //Inspecciones en el prototipo del Hero
+            //Inspecciones en el prototipo del Object
+
+        </script>
+
+    </body>
+</html>
